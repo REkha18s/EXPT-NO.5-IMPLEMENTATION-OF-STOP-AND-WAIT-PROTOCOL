@@ -20,6 +20,7 @@ Step 13: In the definition of the finish procedure declare the global variables.
 Step 16: Stop the program.
  
 # PROGRAM
+```
 set ns [new Simulator]
 set namfile [open out.nam w]
 $ns namtrace-all $namfile proc finish {}
@@ -67,7 +68,7 @@ $ns at 3.1 "$ns trace-annotate \"FTP stops\""
 $ns at 0.0 "$n0 label Sender"
 $ns at 0.0 "$n1 label Receiver"
 $ns run
- 
+ ```
 # OUTPUT
 
 <img width="1280" height="916" alt="image" src="https://github.com/user-attachments/assets/0c1a1a48-e2a4-4294-a44b-a91c8eb78464" />
